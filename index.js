@@ -107,7 +107,7 @@ function execute(command, callback){
 }
 
 function runYo(file) {
-  execute('yo sol2swagger --apiPath '+file+' --framework express --creatorName "Shannon Code" --email "genecyber@gmail.com" --githubUser genecyber', function (out) {
+  execute('yo sol2swagger --apiPath out.json --framework express --creatorName "Shannon Code" --email "genecyber@gmail.com" --githubUser genecyber', function (out) {
     console.log(out)
     execute('node server.js', function (out) {
       console.log(out)
