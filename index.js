@@ -40,7 +40,7 @@ if (server) {
   var address = 'http://localhost:' + port
   console.log('API running at ' + address)
   if (generate) {
-    runYo()  
+    runYo(parsed.location)  
   }
   opn(address)
 } else {
@@ -106,8 +106,8 @@ function execute(command, callback){
     })
 }
 
-function runYo() {
-  execute('yo sol2swagger --apiPath out.json --framework express --creatorName "Shannon Code" --email "genecyber@gmail.com" --githubUser genecyber', function (out) {
+function runYo(file) {
+  execute('yo sol2swagger --apiPath '+file+' --framework express --creatorName "Shannon Code" --email "genecyber@gmail.com" --githubUser genecyber', function (out) {
     console.log(out)
     execute('node server.js', function (out) {
       console.log(out)
