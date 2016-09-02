@@ -1,0 +1,44 @@
+[
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "name": "balances",
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "receiver",
+                "type": "address"
+            },
+            {
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "sendToken",
+        "outputs": [
+            {
+                "name": "sufficient",
+                "type": "bool"
+            }
+        ],
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "type": "constructor"
+    }
+]
