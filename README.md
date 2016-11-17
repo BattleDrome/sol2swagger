@@ -1,6 +1,8 @@
 # sol2swagger
 Convert Solidity files and Interface ABI to Swagger specifications
 
+`TODO: Handle imports and pragma versioning`
+
 ## Install
 ```
 npm install https://github.com/loyyal/sol2swagger.git -g
