@@ -8,7 +8,7 @@ var exec = require('child_process').exec
 var handle
 
 // Args
-var input = process.argv[2]
+var input = process.argv[2].indexOf("-") < 0 ? process.argv[2] : process.argv[3]
 // Flags
 var server = contains(process.argv, "-s") || contains(process.argv, "--server")
 var portFlag = contains(process.argv, "-p") || contains(process.argv, "--port")
@@ -24,7 +24,6 @@ if (help || !input) {
   console.log("-g, --generate         Run the API Generator tool")
   return
 }
-
 var parsed = template.utils.consumeInput(input)
 var app = express()
 app.use('/', express.static(__dirname+'/ui'))
