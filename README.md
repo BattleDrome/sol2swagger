@@ -13,6 +13,7 @@ npm install https://github.com/loyyal/sol2swagger.git -g
 ```
 sol2swagger SomeFile.sol
 ```
+<img width="50%" src="media/sol2swagger1.gif" />
 
 Will result in an openapi (Swagger 2.0) specification of the provided contract being printed to the screen.
 
@@ -25,6 +26,7 @@ This allows piping to another program or echoing to a file.
 ```
 sol2swagger SomeFile.sol -s
 ```
+<img width="50%" src="media/sol2swagger3.gif" />
 
 This will run a Swagger UI site locally to let you inspect your newly generated specification
 <img width="50%" src="./data/ui.png" />
@@ -56,6 +58,7 @@ npm install https://github.com/synrg-labs/generator-sol2solidity.git -g
 ```
 sol2swagger SomeFile.sol -s -g
 ```
+<img width="50%" src="media/sol2swagger4.gif" />
 
 Wait a few minutes and you will be presented with the familiar Swagger UI viewer.
 
